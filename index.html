@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -15,8 +15,12 @@
             <div class="form-group">
                 <label id="name-label" for="name">Name</label><br>
                 <input id="name" type="name" placeholder="Enter your name" required><br>
+            </div>
+            <div class="form-group">
                 <label id="email-label" for="email">Email</label><br>
                 <input id="email" type="email" placeholder="Enter your email" required><br>
+            </div>
+            <div class="form-group">
                 <label id="number-label" for="number">Age</label><br>
                 <input id="number" type="number" min="1" max="99" placeholder="Enter your age"><br>
             </div>
@@ -43,7 +47,7 @@
             <div class="form-group">
                 <label for="dropdown-two">What is your favorite feature of freeCodeCamp?</label><br>
                 <select id="dropdown-two" name="feature"><br>
-                    <option value="">Select an option</option>
+                    <option disabled selected value="">Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
                     <option value="community">Community</option>
@@ -65,11 +69,11 @@
                 <label for="suggestion">Any comments or suggestions?</label><br>
                 <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <button type="submit" id="submit">Submit</button>
             </div>
         </form>
-    </main>
+    </main>    
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
